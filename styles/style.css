@@ -1,0 +1,32 @@
+h1{
+    color: red;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background:  indigo;
+
+    transition: all 1s linear;
+
+    /* &:hover{
+        background: hotpink;
+    }     */
+}
+
+.box:hover{
+    background: hotpink;
+    width: 300px;
+}
+
+.boxAnim{
+    width: 200px;
+    height: 200px;
+    background:  grey;
+    animation: changeColor 3s infinite alternate linear;
+}
+
+@keyframes changeColor{
+    0% { background: red;}
+    50% {background: gold;}
+    100% {background: GREEN;}
